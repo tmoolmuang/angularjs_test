@@ -1,0 +1,10 @@
+<h4>scope inheritance</h4>
+<div ng-controller="parent">
+  Parent: {{name}}  {{lastname}} <br />
+  <hr>
+  <div ng-controller="child">
+    Child: {{name}}<br />
+    Child Fullname: {{childFullName()}}<br />
+    Parent name: {{parentname}}
+  </div>
+</div>

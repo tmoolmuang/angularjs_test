@@ -1,0 +1,11 @@
+<h4>Bindings: ng-bind(one-way), ng-model(two-way), and one-time binding</h4>
+<div>
+  name: {{name}}
+  <hr>
+  one-way bind: <span ng-bind="name"></span><br />
+  hour work: {{hr}}	<button ng-click="doubleHr()">Double Hour</button><hr>
+  Initial hour: {{::hr}} "(one-time binding will not change when click)"
+  <hr>
+  overtime hour work: {{ot}} or change it here <input type="text" ng-model="ot" />
+  <button ng-click="doubleOt()">Double Overtime</button>
+</div>
