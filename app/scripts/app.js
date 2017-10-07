@@ -33,6 +33,11 @@
 			.state("directive1", {
 				url: "/directive1",
 				templateUrl: "templates/directive1.html"
+			})
+			.state("watcher1", {
+				url: "/watcher1",
+				templateUrl: "templates/watcher1.html",
+				controller: "Watcher1Ctrl"
 			});
 	}
 

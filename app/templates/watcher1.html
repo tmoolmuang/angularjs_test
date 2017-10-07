@@ -1,0 +1,17 @@
+<div>
+  <strong>ng-change</strong> <br />
+  {{resultA}} <br />
+  a = <input ng-model="a" ng-change="changeA()" />
+  {{a}}
+  <hr>
+  <strong>$watch</strong> <br />
+  <button ng-click="changeB()">click to change B programmatically</button> <br />
+  <span>(check console log to see value change)</span> <br />
+  {{resultB}}
+  <hr>
+  <strong>$watchGroup</strong> <br />
+  <button ng-click="changeY()">click to change Y programmatically</button> <br />
+  <span>(check console log to see value change)</span> <br />
+  {{resultXYZ}}
+
+</div>
