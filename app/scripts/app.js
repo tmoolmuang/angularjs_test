@@ -38,6 +38,11 @@
 				url: "/watcher1",
 				templateUrl: "templates/watcher1.html",
 				controller: "Watcher1Ctrl"
+			})
+			.state("digest", {
+				url: "/digest",
+				templateUrl: "templates/digest.html",
+				controller: "DigestCtrl"
 			});
 	}
 

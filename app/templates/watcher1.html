@@ -1,17 +1,23 @@
 <div>
+  <h4>Custom $watcher listener</h4>
   <strong>ng-change</strong> <br />
-  {{resultA}} <br />
   a = <input ng-model="a" ng-change="changeA()" />
-  {{a}}
+  {{a}} <br />
+  {{resultA}}
   <hr>
-  <strong>$watch</strong> <br />
+  <strong>reference $watch</strong> <br />
   <button ng-click="changeB()">click to change B programmatically</button> <br />
-  <span>(check console log to see value change)</span> <br />
+  <span>(open dev tool console log to see value change)</span> <br />
   {{resultB}}
   <hr>
-  <strong>$watchGroup</strong> <br />
+  <strong>reference $watchGroup</strong> <br />
   <button ng-click="changeY()">click to change Y programmatically</button> <br />
-  <span>(check console log to see value change)</span> <br />
+  <span>(open dev tool console log to see value change)</span> <br />
   {{resultXYZ}}
-
+  <hr>
+  <strong>equality $watch</strong> <br />
+  <button ng-click="changeAAref()">click to change AA object programmatically</button> <br />
+  <span>(open dev tool console log to see value change)</span> <br />
+  {{resultAA}}
+  <hr>
 </div>
