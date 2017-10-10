@@ -43,6 +43,11 @@
 				url: "/digest",
 				templateUrl: "templates/digest.html",
 				controller: "DigestCtrl"
+			})
+			.state("sharedscope", {
+				url: "/sharedscope",
+				templateUrl: "templates/sharedscope.html",
+				controller: "SharedScopeCtrl"
 			});
 	}
 
