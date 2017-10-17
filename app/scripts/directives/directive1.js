@@ -1,19 +1,19 @@
 (function(){
 	function dirFunct() {
 		return {
-			template: "<span>This is my in-line directive <strong>template:</strong></span>"
+			template: "<div>This content is from in-line directive <strong>template:</strong></div>"
 		};
 	}
 
 	function dir1Funct() {
 		return {
-			templateUrl: "dir1.html"
+			templateUrl: "dir.html"
 		};
 	}
 
 	function dir2Funct() {
 		return {
-			templateUrl: "/templates/directives/dir2.html"
+			templateUrl: "/templates/directives/directive.html"
 		};
 	}
 

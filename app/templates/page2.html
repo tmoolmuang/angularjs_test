@@ -1,10 +1,15 @@
 <h4>scope inheritance</h4>
 <div ng-controller="parent">
   Parent: {{name}}  {{lastname}} <br />
+  favorite food = {{food}} <br />
+  food: <input ng-model="food"></input>
   <hr>
   <div ng-controller="child">
     Child: {{name}}<br />
     Child Fullname: {{childFullName()}}<br />
-    Parent name: {{parentname}}
+    Parent name: {{parentname}} <br />
+    Parent food: {{$parent.food}} <br />
+    Inherited food: {{food}} <br />
+    food: <input ng-model="food"></input>
   </div>
 </div>

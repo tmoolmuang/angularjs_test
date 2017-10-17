@@ -1,9 +1,15 @@
 <h4>Shared Scope:</h4>
 <div>
   controller: a = {{a}}<br />
-  change here: <input ng-model="a"></input>
-
+  controller: b = {{b}}<br />
+  change a here: <input ng-model="a"></input><br />
+  <button ng-click="changeB()">change B in parent controller</button>
+  <hr>
+  directive 1
   <sharedscope></sharedscope>
+
+  <hr>
+  directive 2
   <sharedscope></sharedscope>
 
 </div>
