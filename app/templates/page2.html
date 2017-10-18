@@ -2,7 +2,9 @@
 <div ng-controller="parent">
   Parent: {{name}}  {{lastname}} <br />
   favorite food = {{food}} <br />
-  food: <input ng-model="food"></input>
+  food: <input ng-model="food"></input><br />
+  object obj.a: {{obj.a}} <br />
+  change obj.a: <input ng-model="obj.a"></input><br />
   <hr>
   <div ng-controller="child">
     Child: {{name}}<br />
@@ -10,6 +12,8 @@
     Parent name: {{parentname}} <br />
     Parent food: {{$parent.food}} <br />
     Inherited food: {{food}} <br />
-    food: <input ng-model="food"></input>
+    food: <input ng-model="food"></input><br />
+    object obj.a: {{obj.a}} <br />
+    change obj.a: <input ng-model="obj.a"></input><br />
   </div>
 </div>

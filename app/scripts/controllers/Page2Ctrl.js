@@ -2,6 +2,9 @@
 	function parentFunct($scope) {
 		$scope.name = "Homer";
 		$scope.lastname = "Simpson";
+		$scope.obj = {
+			"a": 100
+		};
 	}
 
 	function childFunct($scope, $rootScope) {
@@ -17,3 +20,10 @@
 		.controller("parent", ["$scope", parentFunct])
 		.controller("child", ["$scope", "$rootScope", childFunct]);
 })();
+
+/*
+	$scope.food is rebound at the child scope. So it will create a brand new scope
+	independent to parent's $scope.food
+
+	But it will not work for object member, obj.a
+*/

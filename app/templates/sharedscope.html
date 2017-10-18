@@ -1,15 +1,24 @@
-<h4>Shared Scope:</h4>
+<h4>Shared Scope, and Inherited Scope for directives:</h4>
 <div>
   controller: a = {{a}}<br />
   controller: b = {{b}}<br />
   change a here: <input ng-model="a"></input><br />
   <button ng-click="changeB()">change B in parent controller</button>
   <hr>
-  directive 1
+  directive with <strong>shared</strong> scope
   <sharedscope></sharedscope>
 
   <hr>
-  directive 2
-  <sharedscope></sharedscope>
+  directive with <strong>inherited</strong> scope
+  <inheritedscope></inheritedscope>
 
+  <hr>
+  directive created with <strong>ng-include</strong> will work as inherited.<br />
+  (except for changeB button which never bind to a new scope)
+  <div ng-include src="'templates/directives/sharedscope.html'"></div>
+
+  <hr>
+  directive created with <strong>ng-repeat</strong> will work as inherited
+  <div inheritedscope ng-repeat="i in [1,2]">
+  </div>
 </div>

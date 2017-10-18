@@ -48,6 +48,11 @@
 				url: "/sharedscope",
 				templateUrl: "templates/sharedscope.html",
 				controller: "SharedScopeCtrl"
+			})
+			.state("readjson", {
+				url: "/readjson",
+				templateUrl: "templates/readjson.html",
+				controller: "ReadJsonCtrl"
 			});
 	}
 
